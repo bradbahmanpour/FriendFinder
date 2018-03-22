@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/css/materialize.min.css">
+    <!-- materialize icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    <title>Friend Finder</title>
+</head>
+
+<body>
+    <div class='container'>
+        <div class='card-panel brown darken-1 col s12 center-align'>
+            <h4 class='white'>
+                <strong>Survey Questions</strong>
+            </h4>
+            <div class='card-panel left-align white'>
+                <h5>
+                    <strong>Please answer on a scale of 1 to 5 based on how much you Agree or Disagree with the question.</strong>
+                </h5>
+                <br>
+                <input id="name" type="text" class="validate" required>
+                <label class='active' for="name">Name (required)</label>
+                <input id="photo" type="text" class="validate" required>
+                <label class='active' for="name">Link to Photo Image (required)</label>
+                <h5>
+                    <strong>Question 1</strong>
+                </h5>
+                <p>I love to go out and do all kind of outdoor sports.</p>
+                <select data-placeholder="" class="browser-default" id="q1">
+                    <option value="">Choose an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <h5>
+                    <strong>Question 2</strong>
+                </h5>
+                <p>I love to stay home and relax, maybe watching my favorite TV series!</p>
+                <select data-placeholder="" class="browser-default" id="q2">
+                    <option value="">Choose an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <h5>
+                    <strong>Question 3</strong>
+                </h5>
+                <p>I love Extreme Sports. Sign me on for SkyDiving!</p>
+                <select data-placeholder="" class="browser-default" id="q3">
+                    <option value="">Choose an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <h5>
+                    <strong>Question 4</strong>
+                </h5>
+                <p>I love to lay on the Beach and Relax</p>
+                <select data-placeholder="" class="browser-default" id="q4">
+                    <option value="">Choose an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <h5>
+                    <strong>Question 5</strong>
+                </h5>
+                <p>I am always open to new experiences.</p>
+                <select data-placeholder="" class="browser-default" id="q5">
+                    <option value="">Choose an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <h5>
+                    <strong>Question 6</strong>
+                </h5>
+                <p>I hangout mostly in my neighborhood, I have everything I need right there! </p>
+                <select data-placeholder="" class="browser-default" id="q6">
+                    <option value="">Choose an Option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <h5>
+                    <strong>Question 7</strong>
+                </h5>
+                <p>I have a clear plan for my next 5 years</p>
+                <select data-placeholder="" class="browser-default" id="q7">
+                    <option value="">Choose an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <h5>
+                    <strong>Question 8</strong>
+                </h5>
+                <p>I can only plan for today or maybe the next Day, I am open for the surprises!</p>
+                <select data-placeholder="" class="browser-default" id="q8">
+                    <option value="">Choose an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <h5>
+                    <strong>Question 9</strong>
+                </h5>
+                <p>I can go anywhere and make friend!</p>
+                <select data-placeholder="" class="browser-default" id="q9">
+                    <option value="">Choose an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <h5>
+                    <strong>Question 10</strong>
+                </h5>
+                <p>I have few friends that I always hangout with</p>
+                <select data-placeholder="" class="browser-default" id="q10">
+                    <option value="">Choose an option</option>
+                    <option value="1">1 (Strongly Disagree)</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5 (Strongly Agree)</option>
+                </select>
+                <br>
+                <!-- Materialize Modal Trigger/Submit Button -->
+                <button type="submit" data-target="modal1" class="waves-effect waves-light btn modal-trigger cyan lighten-1" id="submitBtn">Submit</button>
+            </div>
+        </div>
+        <div class='col s4'>
+            <p>
+                <a href='/api/friends'>API Friends List</a> |
+                <a href='https://github.com/bradbahmanpour/FriendFinder.git' target='_blank'>GitHub Repo</a>
+            </p>
+        </div>
+
+        <!-- Materialize Modal Structure -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <h4>Meet Your New BFF</h4>
+                <h5 id="matchName"></h5>
+                <img id="matchPic" src="" alt="Your Best Friend" height="250" width="250">
+            </div>
+            <div class="modal-footer">
+                <a href="/survey" class=" modal-action modal-close waves-effect waves-green btn-flat">Done</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Grabs information and sends it to server -->
+    <script type="text/javascript">
+        //Array to keep Users Scores
+
+        var UserScores = [];
+        var CurrentUserScores = [];
+        var totalDifference = 0;
+        var userDifferences = [];
+        var total = 0;
+
+
+        $(document).ready(function () {
+            $("#submitBtn").on("click", function () {
+                //form validation
+                function validateForm() {
+                    var isValid = true;
+                    $('.validate').each(function () {
+                        if ($(this).val() === '') {
+                            isValid = false;
+                        }
+                    });
+                    $('.browser-default').each(function () {
+                        if ($(this).val() === "") {
+                            isValid = false;
+                        }
+                    });
+                    return isValid;
+                }
+                //if everything is filled
+                if (validateForm() == true) {
+                    //creates a new friend from the values submitted
+                    var newFriend = {
+                        name: $('#name').val().trim(),
+                        photo: $('#photo').val().trim(),
+                        scores: [
+                            $('#q1').val(),
+                            $('#q2').val(),
+                            $('#q3').val(),
+                            $('#q4').val(),
+                            $('#q5').val(),
+                            $('#q6').val(),
+                            $('#q7').val(),
+                            $('#q8').val(),
+                            $('#q9').val(),
+                            $('#q10').val(),
+                        ]
+                    };
+
+                    // Add the current User Scores in the Array (only once!)
+                    if (CurrentUserScores.length === 0) {
+                        for (i = 0; i < 10; i++) {
+                            CurrentUserScores.push(newFriend.scores[i])
+                        }
+                    }
+                    console.log(CurrentUserScores);
+
+                    //Grabs current URL of website
+                    var currentURL = window.location.origin;
+                    //AJAX posts the data to friends API.
+                    $.post(currentURL + "/api/friends", newFriend, function (data) {
+                        //Grab the result from the AJAX post so that the best match's name and photo are displayed.
+
+                        console.log("I am after Posting Data");
+                        console.log(data);
+                        userDifferences = []; // Empty User Difference Array
+                        for (i = 0; i < data.length - 1; i++) {
+                            UserScores = [];
+                            //   totalDifference = 0;
+                            //  total = 0;
+                            for (j = 0; j < 10; j++) {
+                                UserScores.push(data[i].scores[j]);
+                            }
+                            console.log(UserScores);
+                            for (x = 0; x < 10; x++) {
+                                totalDifference = parseInt(CurrentUserScores[x]) - parseInt(
+                                    UserScores[x]);
+                                totalDifference = Math.abs(totalDifference);
+                                total = total + totalDifference;
+                                console.log("totalDifference = " + totalDifference);
+                                console.log("total = " + total);
+                            }
+                            console.log("total = " + total);
+                            userDifferences.push(total);
+                            total = 0;
+                            totalDifference = 0;
+
+                        }
+
+                        console.log("userDifferences = " + userDifferences);
+                        var min = Math.min.apply(Math, userDifferences); // Find the minimum number in the Array
+                        console.log("minimum Value is = " + min);
+
+                        // Find the User with the minimum number
+                        var bestFriendIndex = userDifferences.indexOf(min);
+                        console.log("bestFriendIndex = " + bestFriendIndex);
+
+                        //Set Best Friend Data for Modal Window
+
+                        console.log(data[bestFriendIndex].name);
+                        console.log(data[bestFriendIndex].photo);
+
+                        $("#matchName").text(data[bestFriendIndex].name);
+                        $("#matchPic").attr("src", data[bestFriendIndex].photo);
+                    });
+
+
+                    // Show the modal with the best match
+                    $('.modal').modal();
+                    //clear form after submission
+                    $('#name').val("");
+                    $('#photo').val("");
+                    $('#q1').val("");
+                    $('#q2').val("");
+                    $('#q3').val("");
+                    $('#q4').val("");
+                    $('#q5').val("");
+                    $('#q6').val("");
+                    $('#q7').val("");
+                    $('#q8').val("");
+                    $('#q9').val("");
+                    $('#q10').val("");
+                } else {
+                    alert("Please fill out ALL fields before submitting survey!")
+                }
+                // return false;
+            });
+        });
+    </script>
+</body>
+
+</html>
